@@ -28,8 +28,6 @@ namespace Chess
         
         public Form1()
         {
-
-
             InitializeComponent();
             CreateDesk();
         }
@@ -88,7 +86,6 @@ namespace Chess
                 {
                     MakeMove(row, col, r_select, c_select);
                     this.label1.Text += "Player " + side + ": " + figures[row, col].Name() + " to " + row + " " + col + "\n";
-
                 }
                 else if (figures[row, col] != null)
                 {
@@ -97,8 +94,6 @@ namespace Chess
                     MakeMove(row, col, r_select, c_select);
 
                 }
-               // MovesTextUpdate(row,col);
-                InfoTextUpdate();
                 if (figures[row, col].Name() == "Pawn") {
                     if (figures[row, col].Side() == 0)
                     {
@@ -119,26 +114,23 @@ namespace Chess
                         }
                     }
                 }
-                
                 figures[row, col].PlusStep();
                 if (side == 1)
                 {
-                    count_steps_1++;
                     side = 0;
                 }
                 else
                 {
-                    count_steps_0++;
                     side = 1;
                 }
                 Checked = false;
+                InfoTextUpdate();
                 ClearDesk();
                 SetImages();
             }
             else if (figures[row, col] != null && side == figures[row, col].Side())
             {
                 Console.WriteLine(figures[row, col].Steps());
-                
                 int[,] arr = new int[8, 8];
                 arr = figures[row, col].Move(row, col);
                 arr = Correction(arr, row, col);
@@ -161,7 +153,6 @@ namespace Chess
             }
             r_select = row;
             c_select = col;
-
         }
 
         void SetFigures()
@@ -516,11 +507,6 @@ namespace Chess
             figures[row_new, col_new] = temp;
         }
 
-        void MovesTextUpdate(int row,int col)
-        {
-            this.label1.Text += "Player " + side + ": " + figures[row, col].Name() + " to " + row + " " + col + "\n";
-
-        }
         void InfoTextUpdate()
         {
             label2.Text = "Side 0:\n";
@@ -553,5 +539,7 @@ namespace Chess
                 }
             }
         }
+
+       
     }
 }
