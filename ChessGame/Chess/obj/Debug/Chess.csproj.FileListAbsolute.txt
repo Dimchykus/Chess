@@ -7,3 +7,12 @@ G:\Windows Forms\Chess\Chess\obj\Debug\Chess.Properties.Resources.resources
 G:\Windows Forms\Chess\Chess\obj\Debug\Chess.csproj.GenerateResource.cache
 G:\Windows Forms\Chess\Chess\obj\Debug\Chess.exe
 G:\Windows Forms\Chess\Chess\obj\Debug\Chess.pdb
+G:\Windows Forms\Chess\ChessGame\Chess\bin\Debug\Chess.exe.config
+G:\Windows Forms\Chess\ChessGame\Chess\bin\Debug\Chess.exe
+G:\Windows Forms\Chess\ChessGame\Chess\bin\Debug\Chess.pdb
+G:\Windows Forms\Chess\ChessGame\Chess\obj\Debug\Chess.csprojAssemblyReference.cache
+G:\Windows Forms\Chess\ChessGame\Chess\obj\Debug\Chess.Form1.resources
+G:\Windows Forms\Chess\ChessGame\Chess\obj\Debug\Chess.Properties.Resources.resources
+G:\Windows Forms\Chess\ChessGame\Chess\obj\Debug\Chess.csproj.GenerateResource.cache
+G:\Windows Forms\Chess\ChessGame\Chess\obj\Debug\Chess.exe
+G:\Windows Forms\Chess\ChessGame\Chess\obj\Debug\Chess.pdb

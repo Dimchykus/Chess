@@ -87,13 +87,17 @@ namespace Chess
                 if (figures[row, col] == null)
                 {
                     MakeMove(row, col, r_select, c_select);
+                    this.label1.Text += "Player " + side + ": " + figures[row, col].Name() + " to " + row + " " + col + "\n";
+
                 }
                 else if (figures[row, col] != null)
                 {
+                    this.label1.Text += "Player " + side + ": hit "+ figures[r_select, c_select].Name()+" with " + figures[row, col].Name() + " to " + row + " " + col + "\n";
                     figures[row, col] = null;
                     MakeMove(row, col, r_select, c_select);
+
                 }
-                MovesTextUpdate(row,col);
+               // MovesTextUpdate(row,col);
                 InfoTextUpdate();
                 if (figures[row, col].Name() == "Pawn") {
                     if (figures[row, col].Side() == 0)
