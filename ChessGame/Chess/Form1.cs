@@ -28,6 +28,8 @@ namespace Chess
         
         public Form1()
         {
+
+
             InitializeComponent();
             CreateDesk();
         }
