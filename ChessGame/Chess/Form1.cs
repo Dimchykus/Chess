@@ -127,6 +127,12 @@ namespace Chess
                 InfoTextUpdate();
                 ClearDesk();
                 SetImages();
+                if(WinCheck() == true)
+                {
+                    label1.Text = "Player " + figures[row, col].Side() + " win";
+                    label2.Text = "Player " + figures[row, col].Side() + " win";
+                }
+
             }
             else if (figures[row, col] != null && side == figures[row, col].Side())
             {
@@ -540,6 +546,32 @@ namespace Chess
             }
         }
 
-       
+        bool WinCheck()
+        {
+            int king = 0;
+            for (int i = 0; i < count; i++)
+            {
+                for (int j = 0; j < count; j++)
+                {
+                    if (figures[i, j] != null)
+                    {
+                        if (figures[i, j].Name() == "King")
+                        {
+                            king++;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine("king: "+king);
+            if(king == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+           
+        }
     }
 }

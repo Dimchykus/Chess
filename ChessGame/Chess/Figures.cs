@@ -88,7 +88,7 @@ namespace Figures {
                     arr[row, col] = 0;
                 }
             }
-            Console.WriteLine("solger");
+            
             
             if (row + 1 < 8)
             {
